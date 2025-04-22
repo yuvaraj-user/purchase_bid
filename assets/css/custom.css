@@ -1,0 +1,152 @@
+body {
+/*    font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f8fbff, #eaf2f8);
+/*    padding: 40px 20px;*/
+}
+.bid-container {
+/*            max-width: 700px;*/
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.bid-header {
+    background: #0abab5;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 12px 12px 0 0;
+}
+.bid-details {
+    text-align: left;
+    padding: 20px;
+}
+.bid-label {
+    font-weight: bold;
+    color: #088f8f;
+}
+.highlight {
+    font-weight: bold;
+    color: #0e6f6c;
+}
+.countdown {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c0392b;
+    text-align: center;
+}
+.btn-bid {
+    background: #0abab5;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 12px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.btn-bid:hover {
+    background: #088f8f;
+    color: white;
+    transform: scale(1.02);
+}
+
+/* Sliding Popup */
+.bid-popup {
+    position: fixed;
+    bottom: -250px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    z-index: 3;
+}
+.bottom-nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    flex: 1;
+    transition: 0.3s;
+}
+.bottom-nav a.active {
+    color: #007bff;
+    font-weight: bold;
+}
+.bottom-nav a i {
+    display: block;
+    font-size: 24px;
+    line-height: 1.5;
+}    
+
+.bid-details::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/rasi.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+#upcomming-bid-section,#order-section,#history-section {
+    display: none;
+}
+
+.navbar-custom {
+    margin-left: unset !important;
+}
+
+.wrapper {
+    padding: 20px 20px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .project_head {
+        margin-top: 10px;
+    }
+
+    .project_head h3 {
+        font-size: 13px !important;
+    }
+
+    .logo-lg img {
+        width: 70px !important;
+        height: 40px !important;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1399px){
+    .vendor_bid_not_confirm {
+        margin-top: 5px;
+    }
+}
+
